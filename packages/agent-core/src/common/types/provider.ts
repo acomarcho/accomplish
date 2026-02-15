@@ -283,7 +283,7 @@ export const DEFAULT_PROVIDERS: ProviderConfig[] = [
     requiresApiKey: true,
     apiKeyEnvVar: 'MINIMAX_API_KEY',
     baseUrl: 'https://api.minimax.io',
-    defaultModelId: 'minimax/MiniMax-M2',
+    defaultModelId: 'minimax/MiniMax-M2.5',
     models: [
       {
         id: 'MiniMax-M2',
@@ -298,6 +298,14 @@ export const DEFAULT_PROVIDERS: ProviderConfig[] = [
         displayName: 'MiniMax-M2.1',
         provider: 'minimax',
         fullId: 'minimax/MiniMax-M2.1',
+        contextWindow: 204800,
+        supportsVision: false,
+      },
+      {
+        id: 'MiniMax-M2.5',
+        displayName: 'MiniMax-M2.5',
+        provider: 'minimax',
+        fullId: 'minimax/MiniMax-M2.5',
         contextWindow: 204800,
         supportsVision: false,
       },
